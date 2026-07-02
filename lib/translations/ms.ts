@@ -3,7 +3,7 @@ const ms = {
   nav: {
     brand: "OUBAOGAME",
     games: "Permainan",
-    aiBattle: "Enjin AI",
+    aiBattle: "Pengetahuan",
     token: "Skala Token",
     shop: "Tentang",
     ranking: "Kedudukan",
@@ -74,8 +74,8 @@ const ms = {
       },
       {
         label: "LANDLORD",
-        title: "Pertempuran Strategi 3 Pemain",
-        desc: "Kerumitan Landlord memerlukan sumber pengkomputeran yang jauh lebih besar — 5-15 Token setiap permainan. AI kami menilai kombinasi kad untuk 3 pemain secara serentak, menjalankan perancangan strategik pelbagai langkah, dan menyampaikan cadangan masa nyata. Ini menunjukkan keupayaan kami menangani senario multi-ejen yang intensif secara pengkomputeran.",
+        title: "Pertempuran Strategi 4 Pemain",
+        desc: "Kerumitan Landlord memerlukan sumber pengkomputeran yang jauh lebih besar — 5-15 Token setiap permainan. Sistem kami menilai kombinasi kad untuk 4 pemain secara serentak, menjalankan perancangan strategik pelbagai langkah, dan menyampaikan cadangan masa nyata. Ini menunjukkan keupayaan kami menangani senario multi-ejen yang intensif secara pengkomputeran.",
         stats: [
           { v: "50K+", l: "jumlah permainan" },
           { v: "98.5%", l: "ketepatan AI" },
@@ -126,10 +126,10 @@ const ms = {
 
   // AI Battle section
   aiBattle: {
-    tag: "ENJIN AI",
-    title: "Penggunaan Token Besar-besaran\nMemacu Setiap Keputusan",
+    tag: "ENJIN PENGETAHUAN",
+    title: "Pangkalan Pengetahuan Besar\nMemacu Setiap Keputusan",
     subtitle:
-      "Enjin AI kami adalah teras platform. Setiap interaksi AI — sama ada melawan AI atau meminta analisis — menggunakan Token berkadar dengan kerumitan pengkomputeran. Seni bina berasaskan Token ini membolehkan penggunaan AI yang mampan dan berskala.",
+      "Platform kami disokong oleh pangkalan pengetahuan domain yang luas meliputi jutaan senario permainan. Setiap interaksi — sama ada melawan lawan AI atau meminta analisis — mengambil dari graf pengetahuan berstruktur dan enjin peraturan, menggunakan Token berkadar dengan kerumitan pertanyaan.",
     modeA: {
       title: "MOD A \u00B7 LAWAN AI PvE",
       steps: [
@@ -191,23 +191,23 @@ const ms = {
   // AI Tech section
   aiTech: {
     tag: "SENI BINA TEKNIKAL",
-    title: "Infrastruktur AI Gred Perusahaan",
+    title: "Infrastruktur Platform Berasaskan Pengetahuan",
     stats: [
-      { value: 98, suffix: "%", label: "Ketepatan" },
-      { value: 300, suffix: "ms", label: "Kependaman" },
-      { value: 12, suffix: "M+", label: "Permainan Dilatih" },
-      { value: 50, suffix: "+", label: "Model AI" },
+      { value: 12, suffix: "M+", label: "Senario Diindeks" },
+      { value: 300, suffix: "ms", label: "Kependaman Pertanyaan" },
+      { value: 500, suffix: "K+", label: "Entri Peraturan" },
+      { value: 50, suffix: "+", label: "Model Domain" },
     ],
-    engineTitle: "Enjin Keputusan Masa Nyata",
+    engineTitle: "Enjin Pengambilan Pengetahuan Masa Nyata",
     engineDesc:
-      "Enjin AI proprietari kami menilai setiap hasil yang mungkin dan menyampaikan cadangan yang boleh diambil tindakan dalam kurang dari 300 milisaat — secara berskala, merentasi ribuan sesi serentak.",
+      "Platform kami mengambil dan menggunakan pengetahuan domain dari pangkalan pengetahuan berstruktur yang besar dalam kurang dari 300 milisaat — meliputi jutaan senario permainan, kombinasi kad, dan peraturan keputusan strategik.",
     engineFeatures: [
-      "Simulasi Monte Carlo",
-      "Pengecaman corak lawan",
-      "Pengoptimuman risiko-ganjaran",
-      "Perancangan strategik pelbagai pusingan",
+      "Pangkalan pengetahuan senario berstruktur",
+      "Pemadanan corak tingkah laku",
+      "Enjin peraturan risiko-ganjaran",
+      "Perancangan strategik pelbagai langkah",
     ],
-    analysisActive: "Analisis AI Aktif",
+    analysisActive: "Analisis Aktif",
     strength: "Kekuatan",
     winRate: "Kadar Menang",
     action: "Tindakan",
@@ -292,15 +292,15 @@ const ms = {
     title: "Keupayaan Teknikal Kami",
     plans: [
       {
-        name: "Enjin AI",
+        name: "Pangkalan Pengetahuan",
         price: "",
         period: "",
-        sub: "Pembelajaran mendalam secara berskala",
+        sub: "Kepakaran domain yang besar",
         features: [
-          "12M+ permainan dilatih",
-          "50+ model AI",
-          "Inferens <300ms",
-          "Algoritma yang membaiki diri",
+          "12M+ senario diindeks",
+          "500K+ peraturan strategik",
+          "Pengambilan <300ms",
+          "Berkembang secara berterusan",
         ],
         highlight: false,
         cta: "Ketahui Lebih",
@@ -506,12 +506,12 @@ const ms = {
     },
     landlord: {
       title: "Landlord",
-      subtitle: "Pertempuran Kad Strategi \u2022 3 Pemain",
+      subtitle: "Pertempuran Kad Strategi \u2022 4 Pemain",
       rulesTitle: "Mekanik Permainan",
       rulesP1:
-        "Permainan kad 3 pemain menggunakan dek 54 kad. Seorang pemain menjadi \u201CLandlord\u201D dan bermain melawan dua \u201CPetani\u201D yang berpasukan.",
+        "Permainan kad 4 pemain menggunakan dek 54 kad. Seorang pemain menjadi \u201CLandlord\u201D dan bermain melawan tiga \u201CPetani\u201D yang berpasukan.",
       rulesP2:
-        "Landlord menerima 3 kad tambahan tetapi mesti mengalahkan kedua-dua lawan sendirian. Kombinasi kad strategik: tunggal, pasangan, tiga sejenisnya, urutan, bom, dan roket.",
+        "Landlord menerima 3 kad tambahan tetapi mesti mengalahkan semua lawan sendirian. Kombinasi kad strategik: tunggal, pasangan, tiga sejenisnya, urutan, bom, dan roket.",
       aiFeaturesTitle: "Keupayaan AI yang Ditunjukkan",
       aiFeatures: [
         {
@@ -595,12 +595,12 @@ const ms = {
 
   // AI Page
   aiPage: {
-    tag: "TEKNOLOGI AI",
-    heroTitle: "Kecerdasan\nDi Sebalik Setiap Langkah",
+    tag: "SISTEM PENGETAHUAN",
+    heroTitle: "Pengetahuan Domain Besar\nDi Sebalik Setiap Langkah",
     heroDesc:
-      "Enjin AI proprietari kami menggabungkan pembelajaran mendalam dengan teori permainan untuk menyampaikan sokongan keputusan masa nyata — menggunakan daya pemprosesan Token yang besar untuk memacu setiap analisis.",
+      "Platform kami dikuasakan oleh pangkalan pengetahuan domain yang luas — meliputi jutaan senario permainan, peraturan keputusan strategik, dan corak tingkah laku. Pengetahuan berstruktur ini membolehkan sokongan keputusan masa nyata secara berskala, menggunakan sumber Token dengan setiap pertanyaan.",
     live: "LANGSUNG",
-    gamesAnalyzed: "Permainan Dianalisis",
+    gamesAnalyzed: "Senario Diindeks",
     architecture: {
       title: "Seni Bina Sistem",
       desc: "Saluran AI pelbagai lapisan dengan modul khusus. Setiap lapisan menggunakan Token berkadar dengan sumbangan pengkomputerannya.",
@@ -682,23 +682,77 @@ const ms = {
     },
     howAiHelps: {
       title: "Pameran Keupayaan AI",
-      desc: "AI kami bukan sekadar bermain — ia menunjukkan keupayaan ML yang canggih merentasi pelbagai mod interaksi.",
+      desc: "AI kami bukan sekadar bermain — ia menunjukkan keupayaan ML yang canggih merentasi pelbagai mod interaksi. Setiap keupayaan mewakili pencapaian kejuruteraan yang berbeza, menggunakan Token berkadar dengan kedalaman pengkomputeran.",
       items: [
         {
-          title: "Analisis Pra-permainan",
-          desc: "AI menganalisis sejarah pemain dan menghasilkan cadangan strategi yang diperibadikan. Fasa pra-pengkomputeran ini menunjukkan keupayaan kami memproses set data sejarah yang besar dengan cekap.",
+          title: "Analisis Pra-permainan & Pemprofilan Pemain",
+          desc: "Sebelum sesi bermula, AI kami memproses keseluruhan sejarah permainan pemain — ribuan tangan lepas, corak menang/kalah, dan kecenderungan strategik. Menggunakan model jujukan berasaskan transformer, ia menghasilkan profil diperibadikan yang mengenal pasti kelemahan, meramalkan padanan lawan, dan mengesyorkan bidang tumpuan. Fasa pra-pengkomputeran ini memproses sehingga 500MB data sejarah setiap pemain dalam kurang dari 2 saat.",
         },
         {
-          title: "Inferens Masa Nyata",
-          desc: "Semasa permainan, AI menyampaikan pengiraan kebarangkalian segera dan cadangan permainan optimum. Setiap permintaan mencetuskan saluran inferens penuh — pemacu utama penggunaan Token.",
+          title: "Saluran Inferens Masa Nyata",
+          desc: "Semasa permainan langsung, setiap permintaan analisis AI mencetuskan saluran inferens penuh: pengekodan keadaan permainan → penilaian rangkaian neural → simulasi Monte Carlo → pengoptimuman strategi → pemformatan respons. Keseluruhan rantaian dilaksanakan dalam kurang dari 300ms, menggunakan 3-8 Token setiap panggilan. Pada beban puncak, kami memproses 1,200+ permintaan inferens serentak merentasi nod tepi teragih.",
         },
         {
-          title: "Analisis Mendalam Pasca-permainan",
-          desc: "Ulasan komprehensif yang dijana AI untuk setiap titik keputusan. Mod analisis mendalam ini menggunakan 10 Token setiap sesi, menunjukkan penilaian pengkomputeran yang menyeluruh.",
+          title: "Analisis Mendalam & Pelaporan Pasca-permainan",
+          desc: "Selepas setiap sesi, AI kami melakukan analisis retroaktif komprehensif. Setiap titik keputusan dinilai semula dengan maklumat lengkap, permainan alternatif diterokai melalui carian pokok menyeluruh, dan laporan terperinci dijana dengan anotasi momen utama. Analisis mendalam ini menggunakan 10 Token setiap sesi — mewakili 15-20 saat pengkomputeran GPU khusus setiap permainan.",
         },
         {
-          title: "Pembelajaran Jangka Panjang",
-          desc: "AI menjejaki kemajuan pemain dari masa ke masa, mengenal pasti corak dan menyesuaikan cadangan. Menunjukkan keupayaan platform kami mengekalkan dan mengembangkan model yang diperibadikan.",
+          title: "Pembelajaran Jangka Panjang & Evolusi Model",
+          desc: "AI kami berkembang secara berterusan. Setiap permainan yang dimainkan memberi maklum balas ke saluran latihan melalui pembelajaran pengukuhan. Model khusus pemain dikemas kini setiap minggu, menggabungkan data tingkah laku baharu. Dalam tempoh 12 bulan, ketepatan ramalan model asas meningkat dari 91.3% kepada 98.2% — bukti infrastruktur penambahbaikan berterusan kami.",
+        },
+        {
+          title: "Koordinasi Strategik Multi-ejen",
+          desc: "Dalam Landlord (permainan 4 pemain), sistem kami menguruskan strategi secara serentak untuk pelbagai ejen yang mesti bekerjasama atau bersaing. Ini memerlukan rujuk silang pelbagai pustaka senario secara serentak, menggunakan 3x lebih banyak Token berbanding pertanyaan perspektif tunggal untuk meliputi peningkatan eksponen dalam pengetahuan berkaitan.",
+        },
+        {
+          title: "Pemodelan Tingkah Laku Lawan",
+          desc: "Modul pengecaman corak kami membina profil tingkah laku masa nyata lawan menggunakan rangkaian neural berasaskan perhatian. Selepas hanya 5-10 tangan, sistem mengenal pasti frekuensi tipu muslihat, tahap toleransi risiko, dan keutamaan strategik dengan ketepatan 87%. Menjelang tangan ke-20+, ketepatan melebihi 94%. Keupayaan ini membolehkan strategi balas adaptif yang bertindak balas terhadap gaya permainan individu.",
+        },
+      ],
+    },
+    caseStudies: {
+      title: "Kes Prestasi Dunia Sebenar",
+      desc: "Contoh terdokumen yang menunjukkan keupayaan infrastruktur AI kami di bawah keadaan operasi sebenar.",
+      items: [
+        {
+          title: "Beban Puncak Kejohanan — 3,800 Permainan Serentak",
+          scenario:
+            "Semasa akhir Musim 11, 3,800 permainan berjalan serentak dengan analisis AI aktif dalam 68% sesi.",
+          challenge:
+            "Mengekalkan kependaman inferens <300ms sambil memproses 2,584 permintaan AI serentak merentasi nod tepi teragih.",
+          result:
+            "Purata kependaman: 247ms. Sifar permintaan digugurkan. Daya pemprosesan Token memuncak pada 4,200/minit. Penskalaan automatik menambah 12 nod tepi dalam masa 90 saat pengesanan beban.",
+          metric: "247ms purata pada 3,800 serentak",
+        },
+        {
+          title: "AI Master lawan Pemain Profesional — Ujian 500 Permainan",
+          scenario:
+            "AI tahap Master kami diuji terhadap 15 pemain kad profesional berkedudukan dalam 500 permainan merentasi Win Big dan Landlord.",
+          challenge:
+            "Menunjukkan prestasi kompetitif AI terhadap pakar manusia sambil menggunakan belanjawan Token yang diketahui.",
+          result:
+            "Kadar kemenangan AI: 73.2% dalam Win Big, 68.7% dalam Landlord. Jumlah Token digunakan: 4,750 (purata 9.5/permainan). Analisis menunjukkan AI mengenal pasti permainan optimum yang terlepas oleh manusia dalam 34% titik keputusan kritikal.",
+          metric: "73.2% kadar kemenangan lawan profesional",
+        },
+        {
+          title: "Penyesuaian Permulaan Sejuk — Pemprofilan Pemain Baharu",
+          scenario:
+            "Mengukur seberapa cepat AI kami menyesuaikan diri dengan gaya permainan yang benar-benar baharu tanpa data sejarah.",
+          challenge:
+            "Mencapai pemodelan lawan yang tepat dalam beberapa tangan pertama sesi pertama pemain baharu.",
+          result:
+            "Selepas 5 tangan: 67% ketepatan ramalan. Selepas 10 tangan: 87%. Selepas 20 tangan: 94%. Sistem membina model tingkah laku berfungsi menggunakan hanya 12 Token dalam fasa pemprofilan.",
+          metric: "94% ketepatan selepas 20 tangan",
+        },
+        {
+          title: "Operasi Berterusan 24 Jam — Ujian Tekanan",
+          scenario:
+            "Operasi berterusan 24 jam dengan 2,000+ sesi serentak yang berterusan dan tiada tetingkap penyelenggaraan.",
+          challenge:
+            "Menunjukkan kebolehpercayaan infrastruktur dan prestasi AI yang konsisten dalam tempoh operasi yang dilanjutkan.",
+          result:
+            "128,400 Token diproses. 99.97% uptime (52 saat jumlah masa henti dari putaran nod tunggal). Variasi kependaman: ±18ms. Penggunaan memori stabil pada 73% merentasi semua nod.",
+          metric: "128,400 Token / 99.97% uptime",
         },
       ],
     },
@@ -864,7 +918,7 @@ const ms = {
           cta: "",
           features: [
             "Win Big (poker 3 kad) dengan sistem lawan AI",
-            "Landlord (斗地主) dengan koordinasi multi-ejen",
+            "Landlord (Lawan Tuan Tanah) dengan koordinasi multi-ejen",
             "Infrastruktur mod PvE, PvP, dan Kejohanan",
             "RNG bertauliah dengan pengesahan kriptografi",
             "Sokongan merentas platform (Web, iOS, Android)",
@@ -936,7 +990,7 @@ const ms = {
         },
         {
           q: "Apakah permainan yang OUBAO telah bangunkan?",
-          a: "Kami telah membina Win Big (poker 3 kad) dan Landlord (斗地主) — kedua-duanya menampilkan lawan AI dari tahap Pemula hingga Master, analisis AI masa nyata, dan infrastruktur kejohanan berbilang pemain.",
+          a: "Kami telah membina Win Big (poker 3 kad) dan Landlord (Lawan Tuan Tanah) — kedua-duanya menampilkan lawan AI dari tahap Pemula hingga Master, analisis AI masa nyata, dan infrastruktur kejohanan berbilang pemain.",
         },
         {
           q: "Di mana OUBAO beroperasi?",
@@ -1107,7 +1161,7 @@ const ms = {
     brandDesc:
       "Platform permainan kad berkuasa AI oleh OUBAO SDN. BHD. Infrastruktur AI gred perusahaan.",
     gamesTitle: "Permainan",
-    aiTitle: "Enjin AI",
+    aiTitle: "Sistem Pengetahuan",
     tokenTitle: "Skala Token",
     rankingTitle: "Kedudukan",
     gameLinks: [

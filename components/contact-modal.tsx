@@ -61,13 +61,25 @@ export function ContactModal({
     setErrorMsg("");
 
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch("https://mail.lxztzp.top/email/send", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          name: name.trim(),
-          phone: phone.trim(),
-          message: message.trim(),
+          to: "support@oubaogame.online",
+          subject: `[OUBAOGAME] New Contact: ${name.trim()}`,
+          html: `
+            <h2>New Contact Form Submission</h2>
+            <table style="border-collapse:collapse;width:100%;max-width:500px;">
+              <tr><td style="padding:8px;font-weight:bold;">Name:</td><td style="padding:8px;">${name.trim()}</td></tr>
+              <tr><td style="padding:8px;font-weight:bold;">Phone:</td><td style="padding:8px;">${phone.trim()}</td></tr>
+            </table>
+            <h3>Message:</h3>
+            <p style="white-space:pre-wrap;">${message.trim()}</p>
+            <hr/>
+            <p style="color:#888;font-size:12px;">Submitted at: ${new Date().toISOString()}</p>
+          `,
+          from_name: "OUBAOGAME",
+          from_alias: "noreply",
         }),
       });
 

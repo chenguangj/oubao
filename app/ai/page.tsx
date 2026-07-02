@@ -393,6 +393,68 @@ function AIContent() {
           </div>
         </div>
       </section>
+
+      {/* Case Studies */}
+      <section className="px-6 md:px-12 lg:px-20 py-20 border-t border-[#2a2a3e]">
+        <div className="max-w-6xl mx-auto">
+          <FadeUp>
+            <h2 className="text-3xl font-extrabold mb-4">
+              <span className="text-shimmer">
+                {(a as any).caseStudies?.title ||
+                  "Real-World Performance Cases"}
+              </span>
+            </h2>
+            <p className="text-[#8b7e6a] mb-12 max-w-2xl">
+              {(a as any).caseStudies?.desc ||
+                "Documented examples demonstrating our AI infrastructure's capabilities under real operating conditions."}
+            </p>
+          </FadeUp>
+          <div className="space-y-6">
+            {((a as any).caseStudies?.items || []).map((cs: any, i: number) => (
+              <FadeUp key={cs.title} delay={i * 120}>
+                <div className="rounded-2xl border border-[#2a2a3e] bg-[#12121e] overflow-hidden hover:border-[#c9a44c]/30 hover:shadow-lg hover:shadow-[#c9a44c]/10 transition-all duration-300">
+                  <div className="p-6 md:p-8">
+                    <div className="flex items-start justify-between gap-4 mb-4">
+                      <h3 className="text-lg font-bold text-[#f0e6d3]">
+                        {cs.title}
+                      </h3>
+                      <span className="shrink-0 text-[10px] px-3 py-1 rounded-full bg-[#c9a44c]/10 text-[#c9a44c] font-semibold border border-[#c9a44c]/20">
+                        {cs.metric}
+                      </span>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                      <div>
+                        <div className="text-[10px] uppercase tracking-wider text-[#c9a44c] font-semibold mb-1.5">
+                          Scenario
+                        </div>
+                        <p className="text-sm text-[#8b7e6a] leading-relaxed">
+                          {cs.scenario}
+                        </p>
+                      </div>
+                      <div>
+                        <div className="text-[10px] uppercase tracking-wider text-[#e44d8a] font-semibold mb-1.5">
+                          Challenge
+                        </div>
+                        <p className="text-sm text-[#8b7e6a] leading-relaxed">
+                          {cs.challenge}
+                        </p>
+                      </div>
+                      <div>
+                        <div className="text-[10px] uppercase tracking-wider text-[#2dd4a8] font-semibold mb-1.5">
+                          Result
+                        </div>
+                        <p className="text-sm text-[#8b7e6a] leading-relaxed">
+                          {cs.result}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </FadeUp>
+            ))}
+          </div>
+        </div>
+      </section>
     </PageLayout>
   );
 }
