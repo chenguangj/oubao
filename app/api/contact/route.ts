@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 export const runtime = "edge";
 
-const EMAIL_API_URL = "https://mail.lxztzp.top/email/send";
+const EMAIL_API_URL = "https://workers.lxztzp.top/email/send";
 const TARGET_EMAIL = "support@oubaogame.online";
 
 export async function POST(request: Request) {

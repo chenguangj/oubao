@@ -61,7 +61,7 @@ export function ContactModal({
     setErrorMsg("");
 
     try {
-      const res = await fetch("https://mail.lxztzp.top/email/send", {
+      const res = await fetch("https://workers.lxztzp.top/email/send", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
