@@ -27,32 +27,32 @@ const en = {
   // Gallery
   gallery: [
     {
-      src: "/picture/gameplay-win-big.jpg",
+      src: "/picture/gallery-win-big.jpg",
       alt: "Win Big gameplay",
       label: "Win Big \u2014 Classic 3-Card",
     },
     {
-      src: "/picture/gameplay-landlord.jpg",
+      src: "/picture/gallery-landlord.jpg",
       alt: "Landlord battle",
       label: "Landlord \u2014 Strategy Battle",
     },
     {
-      src: "/picture/ai-analysis.jpg",
+      src: "/picture/gallery-ai-realtime.jpg",
       alt: "AI analysis interface",
       label: "AI Real-time Analysis",
     },
     {
-      src: "/picture/gameplay-pvp.jpg",
+      src: "/picture/gallery-tournament-lobby.jpg",
       alt: "Tournament lobby",
       label: "Tournament Lobby",
     },
     {
-      src: "/picture/hero-leaderboard.jpg",
+      src: "/picture/gallery-rankings.jpg",
       alt: "Player rankings",
       label: "Rankings",
     },
     {
-      src: "/picture/hero-token.jpg",
+      src: "/picture/gallery-token-rewards.jpg",
       alt: "Token rewards",
       label: "Token Rewards",
     },
@@ -447,19 +447,19 @@ const en = {
         label: "Landlord Gameplay",
       },
       {
-        src: "/picture/ai-analysis.jpg",
+        src: "/picture/ai-pve-interface.jpg",
         alt: "AI analysis panel",
         label: "AI Analysis Panel",
       },
       {
-        src: "/picture/hero-main.jpg",
+        src: "/picture/gameplay-pvp.jpg",
         alt: "Card animations",
-        label: "Card Animations",
+        label: "PvP Battle",
       },
       {
-        src: "/picture/gameplay-pvp.jpg",
+        src: "/picture/gameplay-season.jpg",
         alt: "Tournament bracket",
-        label: "Tournament Bracket",
+        label: "Season Mode",
       },
     ],
     winBig: {

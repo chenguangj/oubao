@@ -254,7 +254,7 @@ function TokenContent() {
               <div className="space-y-4">
                 <div className="rounded-2xl overflow-hidden border border-[#2a2a3e] shadow-md">
                   <GameImage
-                    src="/picture/token-earn.jpg"
+                    src="/picture/gallery-token-rewards.jpg"
                     aspect="video"
                     glowColor="emerald"
                     overlayText="Token Earning Interface"
@@ -263,7 +263,7 @@ function TokenContent() {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="rounded-xl overflow-hidden border border-[#2a2a3e]">
                     <GameImage
-                      src="/picture/token-buy.jpg"
+                      src="/picture/daily-rewards.jpg"
                       aspect="square"
                       glowColor="orange"
                       overlayText="Daily Rewards"
@@ -271,7 +271,7 @@ function TokenContent() {
                   </div>
                   <div className="rounded-xl overflow-hidden border border-[#2a2a3e]">
                     <GameImage
-                      src="/picture/token-spend.jpg"
+                      src="/picture/achievements.jpg"
                       aspect="square"
                       glowColor="indigo"
                       overlayText="Achievements"

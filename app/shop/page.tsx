@@ -175,9 +175,9 @@ function ShopContent() {
                     <GameImage
                       src={
                         [
-                          "/picture/token-earn.jpg",
-                          "/picture/token-buy.jpg",
-                          "/picture/token-spend.jpg",
+                          "/picture/plan-free.jpg",
+                          "/picture/plan-pro.jpg",
+                          "/picture/plan-premium.jpg",
                         ][i]
                       }
                       aspect="wide"
@@ -270,7 +270,7 @@ function ShopContent() {
                           "/picture/token-buy.jpg",
                           "/picture/token-earn.jpg",
                           "/picture/token-spend.jpg",
-                          "/picture/hero-token.jpg",
+                          "/picture/daily-rewards.jpg",
                         ][i]
                       }
                       aspect="wide"

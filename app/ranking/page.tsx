@@ -174,7 +174,19 @@ function RankingContent() {
                 >
                   <div className="h-28 overflow-hidden relative">
                     <GameImage
-                      src={["/picture/mode-pve.jpg", "/picture/mode-pvp.jpg", "/picture/mode-tournament.jpg", "/picture/gameplay-win-big.jpg", "/picture/gameplay-landlord.jpg", "/picture/gameplay-pvp.jpg"][i]} aspect="wide" glowColor={tierImgColors[i]} overlayText={item.tier}
+                      src={
+                        [
+                          "/picture/tier-bronze.jpg",
+                          "/picture/tier-silver.jpg",
+                          "/picture/tier-gold.jpg",
+                          "/picture/tier-platinum.jpg",
+                          "/picture/tier-diamond.jpg",
+                          "/picture/tier-master.jpg",
+                        ][i]
+                      }
+                      aspect="wide"
+                      glowColor={tierImgColors[i]}
+                      overlayText={item.tier}
                       className="h-full !aspect-auto"
                     />
                     <div className="absolute top-3 right-3 w-8 h-8 rounded-lg bg-[#0a0a14]/90 backdrop-blur-sm flex items-center justify-center shadow-sm">
@@ -282,12 +294,18 @@ function RankingContent() {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="rounded-xl overflow-hidden border border-[#2a2a3e]">
                     <GameImage
-                      src="/picture/gameplay-season.jpg" aspect="square" glowColor="indigo" overlayText="Season Rewards"
+                      src="/picture/season-rewards.jpg"
+                      aspect="square"
+                      glowColor="indigo"
+                      overlayText="Season Rewards"
                     />
                   </div>
                   <div className="rounded-xl overflow-hidden border border-[#2a2a3e]">
                     <GameImage
-                      src="/picture/mode-tournament.jpg" aspect="square" glowColor="orange" overlayText="Tournament Bracket"
+                      src="/picture/tournament-bracket.jpg"
+                      aspect="square"
+                      glowColor="orange"
+                      overlayText="Tournament Bracket"
                     />
                   </div>
                 </div>
@@ -323,7 +341,17 @@ function RankingContent() {
                 >
                   <div className="h-28 overflow-hidden">
                     <GameImage
-                      src={["/picture/feat-winrate.jpg", "/picture/feat-optimal.jpg", "/picture/feat-sparring.jpg", "/picture/feat-review.jpg"][i]} aspect="wide" glowColor={categoryColors[i]} overlayText={item.title}
+                      src={
+                        [
+                          "/picture/achievements.jpg",
+                          "/picture/daily-rewards.jpg",
+                          "/picture/gallery-win-big.jpg",
+                          "/picture/ai-demo.jpg",
+                        ][i]
+                      }
+                      aspect="wide"
+                      glowColor={categoryColors[i]}
+                      overlayText={item.title}
                       className="h-full !aspect-auto"
                     />
                   </div>

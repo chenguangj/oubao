@@ -208,12 +208,12 @@ function AIContent() {
                     <GameImage
                       src={
                         [
-                          "/picture/ai-analysis.jpg",
+                          "/picture/gameplay-pve.jpg",
                           "/picture/ai-demo.jpg",
-                          "/picture/ai-architecture.jpg",
-                          "/picture/ai-pve-interface.jpg",
-                          "/picture/ai-decision.jpg",
+                          "/picture/feat-optimal.jpg",
+                          "/picture/feat-sparring.jpg",
                           "/picture/feat-review.jpg",
+                          "/picture/feat-winrate.jpg",
                         ][i]
                       }
                       aspect="wide"
@@ -292,7 +292,7 @@ function AIContent() {
                 </div>
                 <div className="h-full min-h-[280px] overflow-hidden">
                   <GameImage
-                    src="/picture/ai-analysis.jpg"
+                    src="/picture/gameplay-pvp.jpg"
                     aspect="square"
                     glowColor="indigo"
                     overlayText="AI Analysis Demo"
@@ -332,10 +332,10 @@ function AIContent() {
                     <GameImage
                       src={
                         [
-                          "/picture/mode-pve.jpg",
-                          "/picture/gameplay-win-big.jpg",
-                          "/picture/gameplay-landlord.jpg",
-                          "/picture/gameplay-pvp.jpg",
+                          "/picture/ai-analysis.jpg",
+                          "/picture/ai-decision.jpg",
+                          "/picture/ai-pve-interface.jpg",
+                          "/picture/ai-architecture.jpg",
                         ][i]
                       }
                       aspect="square"

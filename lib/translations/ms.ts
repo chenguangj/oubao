@@ -27,32 +27,32 @@ const ms = {
   // Gallery
   gallery: [
     {
-      src: "/picture/gameplay-win-big.jpg",
+      src: "/picture/gallery-win-big.jpg",
       alt: "Permainan Win Big",
       label: "Win Big \u2014 Kad 3 Klasik",
     },
     {
-      src: "/picture/gameplay-landlord.jpg",
+      src: "/picture/gallery-landlord.jpg",
       alt: "Pertempuran Landlord",
       label: "Landlord \u2014 Pertempuran Strategi",
     },
     {
-      src: "/picture/ai-analysis.jpg",
+      src: "/picture/gallery-ai-realtime.jpg",
       alt: "Antara muka analisis AI",
       label: "Analisis AI Masa Nyata",
     },
     {
-      src: "/picture/gameplay-pvp.jpg",
+      src: "/picture/gallery-tournament-lobby.jpg",
       alt: "Lobi kejohanan",
       label: "Lobi Kejohanan",
     },
     {
-      src: "/picture/hero-leaderboard.jpg",
+      src: "/picture/gallery-rankings.jpg",
       alt: "Kedudukan pemain",
       label: "Kedudukan",
     },
     {
-      src: "/picture/hero-token.jpg",
+      src: "/picture/gallery-token-rewards.jpg",
       alt: "Ganjaran Token",
       label: "Ganjaran Token",
     },
@@ -447,19 +447,19 @@ const ms = {
         label: "Permainan Landlord",
       },
       {
-        src: "/picture/ai-analysis.jpg",
+        src: "/picture/ai-pve-interface.jpg",
         alt: "Panel analisis AI",
         label: "Panel Analisis AI",
       },
       {
-        src: "/picture/hero-main.jpg",
-        alt: "Animasi kad",
-        label: "Animasi Kad",
+        src: "/picture/gameplay-pvp.jpg",
+        alt: "Pertempuran PvP",
+        label: "Pertempuran PvP",
       },
       {
-        src: "/picture/gameplay-pvp.jpg",
-        alt: "Kurungan kejohanan",
-        label: "Kurungan Kejohanan",
+        src: "/picture/gameplay-season.jpg",
+        alt: "Mod Musim",
+        label: "Mod Musim",
       },
     ],
     winBig: {

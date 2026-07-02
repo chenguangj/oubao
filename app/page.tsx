@@ -736,7 +736,7 @@ function PageContent() {
               {/* AI interface screenshot */}
               <div className="relative h-full min-h-[300px] overflow-hidden">
                 <GameImage
-                  src="/picture/ai-analysis.jpg"
+                  src="/picture/ai-decision.jpg"
                   aspect="square"
                   glowColor="indigo"
                   overlayText="AI Decision Engine"
