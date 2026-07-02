@@ -9,7 +9,7 @@ import {
   Coins,
   TrendingUp,
   Gift,
-  ShoppingCart,
+  Server,
   RefreshCw,
   ArrowRight,
   CheckCircle2,
@@ -92,7 +92,7 @@ function TokenContent() {
   const tk = t.tokenPage;
   const [contactOpen, setContactOpen] = useState(false);
 
-  const howIcons = [ShoppingCart, Coins, RefreshCw];
+  const howIcons = [Server, Coins, RefreshCw];
   const howColors = [
     {
       color: "text-[#c9a44c]",

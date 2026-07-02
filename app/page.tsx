@@ -257,7 +257,7 @@ function PageContent() {
                 }}
               >
                 <Link
-                  href="/games"
+                  href="/about"
                   className="inline-block px-8 py-4 rounded-xl bg-gradient-to-r from-[#c9a44c] to-[#8b6914] text-[#0a0a14] text-sm font-semibold tracking-wider shadow-lg shadow-[#c9a44c]/25 hover:shadow-[#c9a44c]/40 hover:scale-[1.05] transition-all duration-300 glow-shadow"
                 >
                   {t.nav.cta}
@@ -995,17 +995,12 @@ function PageContent() {
                     </li>
                   ))}
                 </ul>
-                <button
-                  onClick={() => {
-                    setContactMessage(
-                      `${t.contactModal.purchasePrefix}: ${plan.name} - ${plan.price}${plan.period}`,
-                    );
-                    setContactOpen(true);
-                  }}
+                <a
+                  href="/about"
                   className={`block w-full py-3.5 rounded-xl text-sm font-semibold tracking-wider transition-all duration-300 ripple-effect text-center ${plan.highlight ? "bg-gradient-to-r from-[#c9a44c] to-[#8b6914] text-[#0a0a14] shadow-md shadow-[#c9a44c]/20 hover:shadow-[#c9a44c]/40 hover:scale-[1.02]" : "border border-[#2a2a3e] text-[#a89a82] hover:border-[#c9a44c]/40 hover:text-[#c9a44c] hover:bg-[#c9a44c]/10"}`}
                 >
                   {plan.cta}
-                </button>
+                </a>
               </BentoCard>
             ))}
           </div>
@@ -1161,7 +1156,7 @@ function PageContent() {
             {t.cta.subtitle}
           </p>
           <MagneticButton
-            href="/games"
+            href="/about"
             className="px-10 py-4 rounded-xl bg-gradient-to-r from-[#c9a44c] to-[#8b6914] text-[#0a0a14] text-sm font-semibold tracking-wider shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.03] transition-all duration-300 glow-shadow"
           >
             {t.cta.button}
@@ -1280,7 +1275,8 @@ function PageContent() {
             <span className="text-xs text-[#5a5a6e]">{t.footer.copyright}</span>
             <div className="flex items-center gap-6">
               {t.footer.links.map((l) =>
-                l.label === "Contact" || l.label === "Hubungi" ? (
+                (l.label as string) === "Contact" ||
+                (l.label as string) === "Hubungi" ? (
                   <button
                     key={l.label}
                     onClick={() => {

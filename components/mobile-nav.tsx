@@ -26,7 +26,7 @@ export function MobileNav() {
   // Detect active page from pathname
   useEffect(() => {
     const path = window.location.pathname;
-    const paths = ["/games", "/ai", "/token", "/shop", "/ranking"];
+    const paths = ["/games", "/ai", "/token", "/about", "/ranking"];
     const idx = paths.indexOf(path);
     if (idx >= 0) setActiveIdx(idx);
   }, []);
@@ -35,31 +35,32 @@ export function MobileNav() {
     { label: t.nav.games, href: "/games" },
     { label: t.nav.aiBattle, href: "/ai" },
     { label: t.nav.token, href: "/token" },
-    { label: t.nav.shop, href: "/shop" },
+    { label: t.nav.shop, href: "/about" },
     { label: t.nav.ranking, href: "/ranking" },
   ];
 
   return (
     <div className="fixed top-0 inset-x-0 z-50 pointer-events-none">
       {/* Desktop nav */}
-      <div className="hidden md:flex justify-center pt-5 pointer-events-auto">
+      <div className="hidden md:block pointer-events-auto">
         <nav
-          className="relative flex items-center gap-2 px-3 py-2 rounded-full transition-all duration-700 overflow-hidden"
+          className="relative flex items-center gap-2 px-6 lg:px-12 py-3 transition-all duration-500"
           style={{
-            background: scrolled ? "rgba(10,10,20,0.95)" : "rgba(10,10,20,0.8)",
+            background: scrolled
+              ? "rgba(10,10,20,0.95)"
+              : "rgba(10,10,20,0.85)",
             backdropFilter: "blur(20px) saturate(1.3)",
             WebkitBackdropFilter: "blur(20px) saturate(1.3)",
-            border: "1px solid rgba(201,164,76,0.15)",
+            borderBottom: "1px solid rgba(201,164,76,0.4)",
             boxShadow: scrolled
-              ? "0 8px 40px rgba(201,164,76,0.1), 0 2px 8px rgba(0,0,0,0.3), inset 0 1px 0 rgba(201,164,76,0.1)"
-              : "0 4px 20px rgba(0,0,0,0.2), inset 0 1px 0 rgba(201,164,76,0.05)",
-            transform: scrolled ? "scale(1)" : "scale(0.98)",
+              ? "0 4px 24px rgba(0,0,0,0.3)"
+              : "0 2px 12px rgba(0,0,0,0.2)",
           }}
         >
           {/* Logo — card flip on hover */}
           <a
             href="/"
-            className="group flex items-center gap-2 px-3 py-1.5 rounded-full hover:bg-[#c9a44c]/10 transition-colors mr-1"
+            className="group flex items-center gap-2 px-2 py-1.5 rounded-lg hover:bg-[#c9a44c]/10 transition-colors mr-4"
           >
             <div
               className="relative w-7 h-7 shrink-0"
@@ -77,16 +78,13 @@ export function MobileNav() {
             </span>
           </a>
 
-          {/* Divider */}
-          <div className="w-px h-5 bg-[#2a2a3e] mx-1" />
-
           {/* Links */}
-          <div className="relative flex items-center gap-0.5">
+          <div className="relative flex items-center gap-1">
             {navLinks.map((l, i) => (
               <a
                 key={l.label}
                 href={l.href}
-                className={`relative flex items-center justify-center px-3.5 py-2 text-[11px] tracking-wide rounded-full transition-colors duration-200 ${
+                className={`relative flex items-center justify-center px-4 py-2 text-[12px] tracking-wide rounded-lg transition-colors duration-200 ${
                   activeIdx === i
                     ? "text-[#c9a44c] font-semibold"
                     : "text-[#8b7e6a] hover:text-[#e8d48b]"
@@ -113,25 +111,24 @@ export function MobileNav() {
             ))}
           </div>
 
-          {/* Divider */}
-          <div className="w-px h-5 bg-[#2a2a3e] mx-1" />
-
           {/* Right actions */}
-          <button
-            onClick={() => setLocale(locale === "en" ? "ms" : "en")}
-            className="flex items-center gap-1 text-[10px] px-2.5 py-2 rounded-full text-[#8b7e6a] hover:text-[#c9a44c] hover:bg-[#c9a44c]/10 transition-all duration-200"
-          >
-            {locale === "en" ? "🇲🇾" : "🇬🇧"}
-          </button>
+          <div className="ml-auto flex items-center gap-2">
+            <button
+              onClick={() => setLocale(locale === "en" ? "ms" : "en")}
+              className="flex items-center gap-1 text-[11px] px-3 py-2 rounded-lg text-[#8b7e6a] hover:text-[#c9a44c] hover:bg-[#c9a44c]/10 transition-all duration-200"
+            >
+              {locale === "en" ? "🇲🇾" : "🇬🇧"}
+            </button>
 
-          <a
-            href="/games"
-            className="relative text-[11px] px-5 py-2 rounded-full bg-gradient-to-r from-[#c9a44c] to-[#8b6914] text-[#0a0a14] font-semibold tracking-wider overflow-hidden group/btn transition-all duration-300 hover:scale-[1.04] shadow-md shadow-[#c9a44c]/25 hover:shadow-[#c9a44c]/40"
-          >
-            {/* Shimmer sweep */}
-            <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-700" />
-            <span className="relative">{t.nav.cta}</span>
-          </a>
+            <a
+              href="/about"
+              className="relative text-[11px] px-5 py-2 rounded-lg bg-gradient-to-r from-[#c9a44c] to-[#8b6914] text-[#0a0a14] font-semibold tracking-wider overflow-hidden group/btn transition-all duration-300 hover:scale-[1.04] shadow-md shadow-[#c9a44c]/25 hover:shadow-[#c9a44c]/40"
+            >
+              {/* Shimmer sweep */}
+              <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-700" />
+              <span className="relative">{t.nav.cta}</span>
+            </a>
+          </div>
         </nav>
       </div>
 
@@ -231,7 +228,7 @@ export function MobileNav() {
             ))}
             <div className="mt-2 px-2 pb-1">
               <a
-                href="/games"
+                href="/about"
                 onClick={close}
                 className="block w-full text-center text-[12px] px-4 py-3.5 rounded-xl bg-gradient-to-r from-[#c9a44c] to-[#8b6914] text-[#0a0a14] font-semibold tracking-wider shadow-md shadow-[#c9a44c]/20"
               >

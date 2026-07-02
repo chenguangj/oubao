@@ -68,7 +68,8 @@ function Footer() {
           <span className="text-xs text-[#5a5a6e]">{f.copyright}</span>
           <div className="flex items-center gap-6">
             {f.links.map((l) =>
-              l.label === "Contact" || l.label === "Hubungi" ? (
+              (l.label as string) === "Contact" ||
+              (l.label as string) === "Hubungi" ? (
                 <button
                   key={l.label}
                   onClick={() => setContactOpen(true)}
