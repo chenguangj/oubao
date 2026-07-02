@@ -1194,9 +1194,10 @@ const ms = {
       { label: "Papan Pendahulu", href: "/ranking#categories" },
     ],
     links: [
-      { label: "Privasi", href: "#" },
-      { label: "Terma", href: "#" },
-      { label: "Hubungi", href: "#" },
+      {
+        label: "support@oubaogame.online",
+        href: "mailto:support@oubaogame.online",
+      },
     ],
     copyright: "\u00A9 2026 OUBAO SDN. BHD. Hak cipta terpelihara.",
   },

@@ -1194,9 +1194,10 @@ const en = {
       { label: "Leaderboards", href: "/ranking#categories" },
     ],
     links: [
-      { label: "Privacy", href: "#" },
-      { label: "Terms", href: "#" },
-      { label: "Contact", href: "#" },
+      {
+        label: "support@oubaogame.online",
+        href: "mailto:support@oubaogame.online",
+      },
     ],
     copyright: "\u00A9 2026 OUBAO SDN. BHD. All rights reserved.",
   },

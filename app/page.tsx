@@ -486,6 +486,11 @@ function PageContent() {
                 "from-[#ff8c42] to-[#ff6b35]",
               ];
               const imgColors = ["indigo", "purple", "orange"] as const;
+              const imgSrcs = [
+                "/picture/hero-games-lobby.jpg",
+                "/picture/ai-decision.jpg",
+                "/picture/gallery-ai-realtime.jpg",
+              ];
               return (
                 <BentoCard
                   key={s.step}
@@ -495,6 +500,7 @@ function PageContent() {
                   {/* Step screenshot */}
                   <div className="relative h-44 overflow-hidden">
                     <GameImage
+                      src={imgSrcs[i]}
                       aspect="video"
                       glowColor={imgColors[i]}
                       overlayText={`Step ${s.step}`}
@@ -1274,29 +1280,15 @@ function PageContent() {
           <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
             <span className="text-xs text-[#5a5a6e]">{t.footer.copyright}</span>
             <div className="flex items-center gap-6">
-              {t.footer.links.map((l) =>
-                (l.label as string) === "Contact" ||
-                (l.label as string) === "Hubungi" ? (
-                  <button
-                    key={l.label}
-                    onClick={() => {
-                      setContactMessage("");
-                      setContactOpen(true);
-                    }}
-                    className="text-xs text-[#5a5a6e] hover:text-[#8b7e6a] transition-colors cursor-pointer"
-                  >
-                    {l.label}
-                  </button>
-                ) : (
-                  <a
-                    key={l.label}
-                    href={l.href}
-                    className="text-xs text-[#5a5a6e] hover:text-[#8b7e6a] transition-colors"
-                  >
-                    {l.label}
-                  </a>
-                ),
-              )}
+              {t.footer.links.map((l) => (
+                <a
+                  key={l.label}
+                  href={l.href}
+                  className="text-xs text-[#5a5a6e] hover:text-[#c9a44c] transition-colors"
+                >
+                  {l.label}
+                </a>
+              ))}
             </div>
           </div>
         </div>

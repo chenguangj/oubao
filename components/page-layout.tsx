@@ -67,26 +67,15 @@ function Footer() {
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <span className="text-xs text-[#5a5a6e]">{f.copyright}</span>
           <div className="flex items-center gap-6">
-            {f.links.map((l) =>
-              (l.label as string) === "Contact" ||
-              (l.label as string) === "Hubungi" ? (
-                <button
-                  key={l.label}
-                  onClick={() => setContactOpen(true)}
-                  className="text-xs text-[#5a5a6e] hover:text-[#c9a44c] transition-colors cursor-pointer"
-                >
-                  {l.label}
-                </button>
-              ) : (
-                <a
-                  key={l.label}
-                  href={l.href}
-                  className="text-xs text-[#5a5a6e] hover:text-[#c9a44c] transition-colors"
-                >
-                  {l.label}
-                </a>
-              ),
-            )}
+            {f.links.map((l) => (
+              <a
+                key={l.label}
+                href={l.href}
+                className="text-xs text-[#5a5a6e] hover:text-[#c9a44c] transition-colors"
+              >
+                {l.label}
+              </a>
+            ))}
           </div>
         </div>
       </div>
